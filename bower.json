@@ -1,0 +1,20 @@
+{
+  "name": "GraphPolynomial",
+  "version": "0.0.1",
+  "authors": [
+    "Sami <muhammad.sami@mediatrac.net>"
+  ],
+  "description": "this is supposed to be an example of usage of a library, and a possible inclusion of custom library",
+  "main": "index.html",
+  "keywords": [
+    "javascript",
+    "jsxgraph",
+    "math",
+    "polynomial"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "jsxgraph": "~0.99.3"
+  }
+}
