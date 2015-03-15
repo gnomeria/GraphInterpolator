@@ -21,6 +21,19 @@
 }
 
 /**
+ * Adds a new point to the polynomial Pn(x) = y
+ * @param {number} x The normalized new 'x' point
+ * @param {number} y The normalized new 'y' point
+ * @returns {number} The index of the added point, used for changing points in the graph/chart
+ */
+Newton.prototype.addNewPoint = function(x,y){
+    this.xs.push(x);
+    this.xs.push(y);
+    this._updateTable();
+    return this.xs.length-1;
+}
+
+/**
  *
  * @param {Number} index : defines which control point to change its values
  * @param {Number} x : value of the control point from the canvas (must be normalized beforehand)
@@ -48,37 +61,58 @@ Newton.prototype.changePoint = function(index, x, y) {
  *
  */
 Newton.prototype._updateTable = function(){
-    for(j=1;j<this.n;j++){
-        for (i=0;i<this.n-j;i++){
+    for(j=1;j<=this.n;j++){
+        for (i=0;i<=this.n-j;i++){
             if (this.xs[i+j] == this.xs[i]){
                 console.error("(Newtonform.js) Error in line ${linenumber}: duplicate x values encountered !\n\n");
                 return;
             }
-            this.c[i] = (ys[i+1]-ys[i])/(xs[i+j]-xs[i]);
+            this.c[i] = (ys[i+1]-ys[i])/(this.xs[i+j]-xs[i]);
 
         }
     }
     console.log("Newton form coefficients : " + this.c);
-    this.c = this.combineCoefficients(this.ys);
-    //console.log("Combined coefficients : " + this.combineCoefficients(this.c));
+    //this.c = this.combineCoefficients(this.ys);
+    console.log("Combined coefficients : " + this.c);
+    console.log("Power form : " + this.getPowerForm());
 }
 
 /**
  *
+ * @returns {string} power form representation of the computed newton interpolation coefficients
+ * can be modified to return the TeX form or any other formatted math texts
+ */
+Newton.prototype.getPowerForm = function(){
+    var str = "\\(y="; N = this.n; C = this.c;
+
+    console.log("C => " + C + ", c=>" +this.c);
+    console.log(ys);
+    for(j=0; j<this.n; j++) {
+        for(i=1; i<=this.n-j; i++) {
+            C[i]=C[i]-xs[i+j]*C[i-1];
+        }
+    }
+    for (i=0; i<=this.n;i++){
+        temp = N-i;
+        if (temp>0)
+            str = str+C[i]+"x^"+temp + "+";
+        else
+            str = str+C[i];
+    }
+    str+="\\)";
+    return str;
+}
+
+/**
+ * @deprecated use getPowerForm() or getNewtonForm() instead
  * @param {Array} c : coefficients for the newton form
  * @returns {Array} c : combined coefficients in the form of c[0]x^n + c[1]x^n-1 + ... + c[n], with c[n] as the constant term
  * @see Jeff Stetekluh's method for combining the terms to form the coefficients of the polynomial.
  */
 Newton.prototype.combineCoefficients = function(c){
-    console.log("c => "+ c);
-    //for(j=0; j<this.n; j++) {
-    //    for(i=1; i<=this.n-j; i++) {
-    //        c[i]=c[i]-xs[i+j]*c[i-1];
-    //    }
-    //}
     for(j=0; j<this.n; j++) {
         for(i=1; i<=this.n-j; i++) {
-            c[i]=this.ys[i]-xs[i+j]*this.ys[i-1];
+            c[i]=c[i]-xs[i+j]*c[i-1];
         }
     }
     return c;
@@ -95,14 +129,22 @@ Newton.prototype.calculateY = function(x){
     for(i=1; i<=this.n; i++) {
         fx=fx*(x-xs[i])+this.c[i];
     }
-
-    //fx = this.c[0];
-    //for(i=1; i<=this.n; i++) {
-    //    fx=fx*x+this.c[i];
-    //}
     return fx;
 }
 
+/**
+ *
+ * @returns {Array} coefficients of the newton backward divided differences table
+ */
+Newton.prototype.getNewtonCoefficients = function(){
+    return this.c;
+}
+
+/**
+ * @deprecated Use the getPowerForm() instead, because this function will be depended on the the time of the
+ * function call, made it to be unrealiable
+ * @returns {Array} coefficients are depended on the time of function call
+ */
 Newton.prototype.getCoefficients = function(){
     return this.c;
 }

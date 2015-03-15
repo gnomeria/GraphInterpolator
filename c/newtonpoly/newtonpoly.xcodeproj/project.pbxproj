@@ -25,6 +25,7 @@
 /* Begin PBXFileReference section */
 		3EBD44F61AB5F4160040557A /* newtonpoly */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = newtonpoly; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EBD44F91AB5F4160040557A /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		3EBD45001AB5F45B0040557A /* newtonpoly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = newtonpoly.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				3EBD44F91AB5F4160040557A /* main.c */,
+				3EBD45001AB5F45B0040557A /* newtonpoly.h */,
 			);
 			path = newtonpoly;
 			sourceTree = "<group>";
@@ -202,6 +204,7 @@
 		3EBD44FE1AB5F4160040557A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				INSTALL_PATH = ./;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -209,6 +212,7 @@
 		3EBD44FF1AB5F4160040557A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				INSTALL_PATH = ./;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

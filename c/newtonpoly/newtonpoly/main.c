@@ -7,9 +7,12 @@
 //
 
 #include <stdio.h>
+#include "newtonpoly.h"
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("Hello, World!\n");
+    for (int i=0; i<N; i++){
+        printf(XS[0]);
+    }
+         
     return 0;
 }
