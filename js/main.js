@@ -11,8 +11,9 @@ do{
     i+=step;
 } while(i<xs[xs.length-1])
 
-console.log(ni.getPowerForm());
-console.log(ni.getPowerForm());
-console.log(ni.getPowerForm());
-console.log(ni.getNewtonCoefficients());
-console.log(ni.getNewtonCoefficients());
+var formula = document.getElementById("theFormula");
+console.log(formula);
+
+// Get the context of the canvas element we want to select
+var ctx = document.getElementById("myChart").getContext("2d");
+var myNewChart = new Chart(ctx).PolarArea(data);

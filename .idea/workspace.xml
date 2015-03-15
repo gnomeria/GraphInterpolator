@@ -1,15 +1,1031 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d8839ef2-7193-4ace-89c3-ff01abeba7a7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/c/newtonpoly/newtonpoly/newtonpoly.h" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/newtonpoly.js" />
+    <list default="true" id="d8839ef2-7193-4ace-89c3-ff01abeba7a7" name="Default" comment="Using newton divided differences for the polynomial interpolation">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/.bower.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/CHANGELOG.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/COPYRIGHT" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/JSXCompressor/COPYING" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/JSXCompressor/LICENSE.APACHE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/JSXCompressor/LICENSE.LGPL" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/JSXCompressor/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/JSXCompressor/compress.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/JSXCompressor/helloworld.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/JSXCompressor/jsxcompressor.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/JSXCompressor/jsxgraph.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/JSXCompressor/jsxgraphcore.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/JSXCompressor/prototype.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/JSXCompressor/testhelloworld.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/JSXCompressor/testjsxgraph.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/LICENSE.LGPL" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/LICENSE.MIT" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/build/compressor.build.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/build/compressor.deps.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/build/core-amd.build.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/build/core-amd.deps.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/build/core.build.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/build/core.deps.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/build/plot.build.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/distrib/AM3.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/distrib/jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/distrib/jsxcompressor.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/distrib/jsxgraph.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/distrib/jsxgraphcore.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/distrib/prototype.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/distrib/themes/dark.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/distrib/themes/gui.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/doc/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/doc/jessie/jessiescript_ref_de.tex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/doc/jessie/jessiescript_ref_en.tex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/doc/jessie/jessiescript_tdm_ref_de.tex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/doc/jsdoc-tk/README" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/doc/jsdoc-tk/plugins/jsxPseudoClass.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/doc/jsdoc-tk/template/allclasses.tmpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/doc/jsdoc-tk/template/allfiles.tmpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/doc/jsdoc-tk/template/class.tmpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/doc/jsdoc-tk/template/index.tmpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/doc/jsdoc-tk/template/publish.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/doc/jsdoc-tk/template/static/default.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/doc/jsdoc-tk/template/static/expandable.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/doc/jsdoc-tk/template/static/header.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/doc/jsdoc-tk/template/static/logo.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/doc/jsdoc-tk/template/symbol.tmpl" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/doc/jsxgraph_refcard.tex" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/Intergeo/Examples2/directed_line_segment.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/Intergeo/Examples2/endpoints_of_line_segment.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/Intergeo/Examples2/foci_of_ellipse.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/Intergeo/Examples2/line_angular_bisectors_of_two_lines.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/Intergeo/Examples2/lineangularbisectorofthreepoints.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/Intergeo/Examples2/polygon.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/Intergeo/Examples2/ray_from_point_and_vector.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/Intergeo/Examples2/ray_from_point_through_point.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/Intergeo/Examples2/symmetry_by_circle.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/Intergeo/Examples2/symmetry_by_line.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/Intergeo/Examples2/symmetry_by_point.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/Intergeo/Examples2/translate.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/Intergeo/Examples2/trigogenangleratios-vggb4.i2g" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/Intergeo/Examples2/vector_from_point_to_point.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/Intergeo/Points.i2g" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/Intergeo/all.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/Intergeo/center_of_three_points.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/Intergeo/circle.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/Intergeo/conic.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/Intergeo/endpoints_of_line_segment.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/Intergeo/free_point.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/Intergeo/intersections_circles_line.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/Intergeo/jsxgraph_Points.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/Intergeo/line.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/Intergeo/line_segment_by_points.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/Intergeo/line_through_two_points.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/Intergeo/linesegment.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/Intergeo/locus_cardioid.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/Intergeo/locus_frequency_duplicator.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/Intergeo/locus_pacman.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/Intergeo/locus_parabola.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/Intergeo/locus_shadow.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/Intergeo/midpoint_of_line_segment.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/Intergeo/midpoint_of_two_points.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/Intergeo/other_intersections.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/Intergeo/parallel_perpendicular_through.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/Intergeo/point.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/Intergeo/rotating_circle.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/Intergeo/tangents_to_circle.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/Intergeo/testcases.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/LSystems2.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/LokSkala.R" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/Text/text.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/Text/text.xhtml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/Text/text_html.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/Text/text_internal.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/Text/text_placement.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/Tracenpoche/frame.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/Tracenpoche/lines_position_analyse.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/Tracenpoche/list" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/Tracenpoche/point.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/Tracenpoche/point.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/Tracenpoche/point_segment_polygon.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/Tracenpoche/polygon.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/Tracenpoche/real_scroll.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/Tracenpoche/testcases.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/Tracenpoche/thales_situation.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/Tracenpoche/triangle_circumcircle.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/Tracenpoche/triangle_innercircle.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/Tracenpoche/triangle_orthocenter.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/Tracenpoche/viewer.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/adg/anothersplit.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/adg/cindy.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/adg/cubic.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/adg/egg.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/adg/ex1.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/adg/ex2.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/adg/ex3.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/adg/limacon.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/adg/limacon.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/adg/ode.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/adg/simsonsteiner.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/adg/spiro.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/adg/watt.cdy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/adg/watt.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/adg/watt.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/adg/watt.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/agedpyramid.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/alternating_subtriangles.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/amd/require.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/amd/requirejs.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/angle.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/angle_prescribed.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/animation/funkanim.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/animation/movealong.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/animation/movebyfunction.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/animation/oscillator.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/apollonius.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/arrows.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/axisvisibility.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/barchart.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/barchart2.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bavaria.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bezier.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/boardevents.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bodenbraeune.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/browser.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspline.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/00.wahlmoeglichkeiten.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/01 - erhebung.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/01.budgetgerade.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/01_aussenhandel.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/02 - Wohlfahrtseffekte.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/02.indifferenzkurve3.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/02_Wohlfahrt_Importland.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/03.haushaltsoptimum.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/03_Wohlfahrt_Exportland.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/04.einkommensaenderung.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/04_aussenhandel-wohlfahrt-gesamt.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/05.inferiores Gut2.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/06.preisaenderung2.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/07.Einkommens-und-Substitutionseffekt2.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/08.GiffengutV.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/09.nachfrage.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/17_eck.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/2_str_satz.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/4_kreis_parabel.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/8-Eck-dynam.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/96_eck.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/Angebot.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/Carsten/Parabelspur.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/Carsten/achensymmetrie_achtecke_diagonal.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/Carsten/balkendiagramm.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/Carsten/bushaltestelle.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/Carsten/einschiebekonstruktion.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/Carsten/gaertner_ludwig.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/Carsten/kreisdiagramm.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/Carsten/kreisverkehr.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/Carsten/parallelogramm_eigenschaften.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/Carsten/potenzreihe.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/Carsten/prozent-anteile-L-vierfarbig.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/Carsten/prozent-anteile-quadrat-windrad.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/Carsten/pythagoras_allgemein.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/Carsten/sinus_asinbx_c.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/Carsten/sinus_einheitskreis.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/Carsten/symmetrische_figuren_vertikal.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/Der kombinierte Einsatz von Geld_.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/Die IS-Kurve mit Erwartungen.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/Die Wirkung von Fiskalpolitik in_.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/Die Wirkungen von Geldpolitik in_.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/Duopol.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/Fibonacci.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/Fiskalpolitik Einkommen und Zin_.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/Fiskalpolitik unter festen WK.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/Geldpolitik Einkommen und Zinss_.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/Geldpolitik und die Rolle von Er_.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/Hoechstpreis 1.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/Hoechstpreis 2.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/IS-Herleitung.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/Konsumentenrente.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/LM-Herleitung.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/LaFlor1.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/LaFlor1a.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/Markteffizienz.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/Marktgleichgewicht.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/Mindestpreis 1.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/Mindestpreis 2.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/Monopol.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/Monopolistische Konkurrenz.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/Nachfrage- und Angebotsueberschuss.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/Nachfrage.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/Nettowohlfahrtsverlust.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/Planoinclinadoporfin.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/Polypol.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/Preisdifferenzierung.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/Probleme/stet2.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/Probleme/stet3.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/Probleme/thales1.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/Probleme/zeros_poles.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/Produzentenrente_2.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/Pythagoras.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/Quadratur.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/Ueberschiessen des nominalen Wechselkurses.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/Unendlich.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/Unendlich_Dreieck.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/Unendlich_Gitter.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/Verschiebung der IS-Kurve in einer geschlossenen VW.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/Verschiebung der IS-Kurve mit Er_.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/Verschiebung der LM-Kurve in ein_.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/Wohlfahrten bei einem Hoechstpreis.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/Wohlfahrten bei einem Mindestpreis.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/aaa.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/achs_sp1.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/achteck.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/achteck0.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/ap_m1_00_A2.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/ap_m1_00_A3.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/baumdiagramm3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/baumdiagramm3b.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/bisector.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/bmw.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/bmw_fib.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/bushaltestelle.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/chrysler.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/decompress.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/degree.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/dyn_dreiecke.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/dynagraph.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/dynagraph_worksheet.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/elek_winkelmes.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/ellip_worksheet.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/ende_streckenverbote.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/euler_gerade1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/euler_gerade2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/findalltags.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/flaechen_modell.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/fuenfeck.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/gegenverkehr_vorrang.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/geogebra.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/gold_drei_sp.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/gold_drei_sp.nc.gxt.org" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/gold_recht.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/goldener_zirkel.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/graph.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/harmon_mittel.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/hier_rechts.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/hoehen.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/i_gleich_recht.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/inhaltsgleich.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/intergeo/D3.3.i2g" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/intergeo/construction/preview.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/intergeo/geonext/all.i2g" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/intergeo/intergeo1.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/intergeo/intergeo2.i2g" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/intergeo/intergeo2.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/intergeo/intergeo2a.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/intergeo/intergeo3.i2g" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/intergeo/intergeo3.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/intergeo/linear-004.i2g" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/intergeo/linear-004.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/kreis.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/kreis_beispiel.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/kreisbewegung-2-2.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/kreisbewegung-2.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/listoftags.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/mercedes.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/mercedes_blau.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/mesolabium.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/mitBild.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/mitsubishi.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/mittelsenkrechte.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/mittelsenkrechte_new.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/newton.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/owl_circle.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/owl_line.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/owl_point.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/page.0006.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/panto3a.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/parabel-scheitelform-allgemein.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/paradoxon_65_64.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/parametric.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/pngtest.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/prozent-anteile-L-diagonal-vierfarbig.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/punkt_scheitel.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/pyth_dyn.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/quad.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/quadratische_funktion_ax2.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/quadratische_funktion_ax2_bx_c.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/rechteck_umfang.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/rechteck_umfang.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/renault.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/sammellinse.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/schwingung.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/seitenhalbierende.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/sh_im_viereck.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/sinus_asinbx_c.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/ssw.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/steuereinnahmen.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/steuern_angebot.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/steuern_nachfrage.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/tangente.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/test.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/test2.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/tetraeder-oktaeder.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/trapez.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/uhr.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/uncompressGeonext.php.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/verbot_fahrzeuge_aller_art.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/vielecke_erzeugen.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/viereck-parkett.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/viereck_gleiter_seiten.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/viereck_gleiter_senkrechte.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/viereck_gleiter_winkel.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/vorrang_vor_gegenverkehr.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/winkelhalbierende.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/wintersport.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/wuerfel_drehbar.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/wuerfel_drehbar_dreieck.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/wuerfel_drehbar_dreieck_diagonal.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/wuerfel_drehbar_fuenfeck.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/wuerfel_drehbar_quadrat.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/wuerfel_drehbar_rechteck_diagonal.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/wuerfel_drehbar_sechseck.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/wuerfel_drehbar_vieleck.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/wuerfel_schnitt2.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/wuerfelschnitt.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/xxx.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bspnc/zoelle_kleines_land.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bst.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/bundestag_elections.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/button.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cannon/cannon.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cannon/img/cannon_bottom.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cannon/img/cannon_bottom.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cannon/img/cannon_muzzle.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cannon/img/cannon_muzzle.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/Elephant.cdy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/Konstruktion1.cdy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/Malfatti.cdy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/MidpointAndCircumcircle.cdy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/PicksTheorem2.cdy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/PythagorasProof.cdy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/Regression.cdy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/Render6.cdy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/Sunflower.cdy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/Taylor2.cdy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/Voronoi3.cdy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/arcs.cdy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/arcsWithFillcolor.cdy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/bisector.cdy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/bisector2.cdy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/bisector3.cdy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/circleCircleIntersection1.cdy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/circleCircleIntersection2.cdy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/circles1.cdy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/circles2.cdy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/circles3.cdy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/circlesWithPropertiesAndGlider.cdy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/compassCircle.cdy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/conic1.cdy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/conic2.cdy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/conic3.cdy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/conic4.cdy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/conic5.cdy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/construct1.cdy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/function1.cdy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/function2.cdy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/function3.cdy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/function4.cdy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/gliderOnCircle.cdy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/gliderOnCircle2.cdy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/gliderOnCircle3.cdy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/gliderOnLine.cdy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/justCircles.cdy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/justLines.cdy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/justPoints.cdy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/lineCircleIntersection1.cdy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/lineCircleIntersection2.cdy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/lineCircleIntersection3.cdy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/lineCircleIntersection4.cdy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/lineIntersection.cdy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/lineWithOnlyOnePoint.cdy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/linesWithProperties.cdy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/parallelAndPerpendicular.cdy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/parallelAndPerpendicular2.cdy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/polygone.cdy" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/unzipped/Elephant" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/unzipped/Konstruktion1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/unzipped/Malfatti" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/unzipped/MidpointAndCircumcircle" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/unzipped/PicksTheorem2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/unzipped/PythagorasProof" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/unzipped/Regression" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/unzipped/Render6" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/unzipped/Sunflower" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/unzipped/Taylor2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/unzipped/Voronoi3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/unzipped/arcs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/unzipped/arcsWithFillcolor" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/unzipped/bisector" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/unzipped/bisector2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/unzipped/bisector3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/unzipped/circleCircleIntersection1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/unzipped/circleCircleIntersection2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/unzipped/circles1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/unzipped/circles2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/unzipped/circles3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/unzipped/circlesWithPropertiesAndGlider" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/unzipped/compassCircle" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/unzipped/conic1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/unzipped/conic2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/unzipped/conic3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/unzipped/conic4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/unzipped/conic5" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/unzipped/construct1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/unzipped/function1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/unzipped/function2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/unzipped/function3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/unzipped/function4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/unzipped/gliderOnCircle" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/unzipped/gliderOnCircle2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/unzipped/gliderOnCircle3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/unzipped/gliderOnLine" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/unzipped/justCircles" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/unzipped/justLines" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/unzipped/justPoints" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/unzipped/lineCircleIntersection1" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/unzipped/lineCircleIntersection2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/unzipped/lineCircleIntersection3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/unzipped/lineCircleIntersection4" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/unzipped/lineIntersection" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/unzipped/lineWithOnlyOnePoint" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/unzipped/linesWithProperties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/unzipped/parallelAndPerpendicular" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/unzipped/parallelAndPerpendicular2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cdy/unzipped/polygone" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cebit/events.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cebit/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cebit/jxg.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/chart.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/chartstyles.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/checkbox.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/cinderella.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/circletangent.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/circumcircles.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/colorblindness.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/colorful_tangents.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/construct.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/curve.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/curve2.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/dashing.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/diffeq.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/dump.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/dynamicSplines.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/elementslist.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/epicycloid.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/fagiolo.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/germany.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/germany.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/germany_json.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/Bourne/deri-log.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/Bourne/roots-polynomial.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/GeogebraCode/ConstructionDefaults.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/GeogebraCode/WorksheetExportDialog.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/GeogebraCode/geogebra-beta.jnlp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/Makefile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/ZA/6. Anhang/6.1. - Entpackte Geogebra Beispieldatei.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/ZA/6. Anhang/6.2. - JXG.GeogebraReader.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/ZA/6. Anhang/6.3. - Parsergrammatik.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/ZA/GeogebraInJSXGraph.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/ablaufdiagramm.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/abstand.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/bianca/SectorStyles3Bianca.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/bianca/circleRadius.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/bianca/circleRadius2.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/bianca/circleStyles.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/bianca/circumcircleSectorsBianca.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/bianca/circumcirclesArcBianca.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/bianca/conics.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/bianca/conics2.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/bianca/conics3.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/bianca/conics4.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/bianca/conics5.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/bianca/conics6.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/bianca/conics7.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/bianca/intersection.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/bianca/intersection2.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/bianca/lineStyles.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/bianca/mittelsenkrechte.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/bianca/parallele.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/bianca/pointStylesBianca.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/bianca/polygonStylesBianca.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/bianca/regularPolygonStylesBianca.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/bianca/schieberegler.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/bianca/schieberegler2.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/bianca/sectorStyles2Bianca.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/bianca/sectorStylesBianca.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/bianca/semicirclesBianca.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/bianca/steigungsdreieckBianca.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/bianca/stylesBianca.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/bianca/tangenten.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/bianca/vectorSimple.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/bianca/vectorStyles.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/bianca/winkelhalbierende.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/degree.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/dreheobjektumpunkt.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/encoding.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/encoding_oldggb.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/flaeche.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/geradedurchzweipunkte.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/geradenspiegelung.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/halbkreisdurchzweipunkte.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/images.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/kegelschnittdurchfuenfpunkte.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/kreisbogenmitmittelpunktundzweipunkte.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/kreisdurchdreipunkte.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/kreismitmittelpunktdurchpunkt.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/kreismitmittelpunktundradis.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/kreissektormitmittelpunktdurchzweipunkte.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/kurvendiskussion.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/matthias/calc.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/matthias/vect.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/michael/exp02.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/michael/exp02_worksheet.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/michael/geogebra.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/michael/geogebra_thumbnail.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/michael/numerics.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/michael/sinus.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/mittelsenkrechte.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/parallelegerade.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/polareoderkonguierterdurchmesser.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/punkt-ya.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/punkt.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/punktspiegelung.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/schieberegler-pow.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/schieberegler.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/schieberegler2-punkt.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/senkrechtegerade.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/sin-intervall.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/sin-point+slider.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/sinus.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/steigung.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/strahldurchzweipunkte.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/streckedurchzweipunkte.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/streckemitfesterlaengevonpunkt.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/streckeobjektzentrischvonpunkt.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/tangenten.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/umkreisbogendurchdreipunkte.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/umkreissektordurchdreipunkte.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/vektorzwischenzweipunkten.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/verschiebeobjektumvektor.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/vieleck-regelmaessig.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/vieleck.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/winkel.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/winkelhalbierende.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/elements/winkelmitfestergroesse.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/geogebra-feuerbachkreis.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/ggb-elements.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/ggb.bnf.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/ggbloadfromstring.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/ggbtest-newxml.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/ggbviewer.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/ggbviewer2.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/grammar-jsccdebug.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/grammar.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/jscc/jscc-0.30.exe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/jscc/jscc-0.30.tar.gz" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/jscc/jscc-0.30.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/jscc/jscc.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/jscc/jscc/driver.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/jscc/jscc/driver_unpacked.js_" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/jscc/jscc/jscc.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/jscc/jscc/jscc.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/jscc/jscc/jscc_logo_small.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/jscc/jscc/jscc_rhino.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/jscc/jscc/webdriver.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/jscc/jscc/zoom.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/jscc/jscc_manual_0.30.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/praesentation/ggb-in-jxg.key" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/praesentation/ggb-in-jxg.pdf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/worksheets/Feuerbachkreis.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/worksheets/GS_Konstruktion_worksheet.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/worksheets/GeradenSpiegelung_worksheet.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/worksheets/PunktSpiegelung_worksheet.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/worksheets/Streckung_worksheet.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/worksheets/addition_worksheet.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/worksheets/baumdiagramm3.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/worksheets/baumdiagramm3b.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/worksheets/betrag_worksheet.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/worksheets/dynagraph.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/worksheets/dynagraph_worksheet.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/worksheets/einheitsvektor_worksheet.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/worksheets/ellip_worksheet.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/worksheets/euler_gerade1.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/worksheets/euler_gerade2.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/worksheets/exp01_worksheet.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/worksheets/exp02_worksheet.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/worksheets/fuenfeck.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/worksheets/funktion_steigung1.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/worksheets/funktion_steigung1b.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/worksheets/funktion_steigung2.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/worksheets/funktion_steigung2b.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/worksheets/gegenvektor_worksheet.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/worksheets/geogebra.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/worksheets/glasscheibe1.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/worksheets/glasscheibe2.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/worksheets/glockenkurve.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/worksheets/hoehenschnittpunkt.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/worksheets/huehner_worksheet.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/worksheets/kreis_gleichung.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/worksheets/kreis_tangente.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/worksheets/leiter_wand.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/worksheets/malthus01_worksheet.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/worksheets/malthus02_worksheet.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/worksheets/malthus03_worksheet.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/worksheets/muehle_worksheet.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/worksheets/normalverteilung.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/worksheets/parabel_abstand.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/worksheets/parabel_scheitel.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/worksheets/pascal01.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/worksheets/pascal02.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/worksheets/polare_hauptsatz_worksheet.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/worksheets/polare_kegelschnitt_worksheet.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/worksheets/polare_kreis_worksheet.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/worksheets/poly2_1.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/worksheets/poly2_2.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/worksheets/poly2_3.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/worksheets/poly3_1.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/worksheets/poly3_2.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/worksheets/poly3_3.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/worksheets/poly3_4.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/worksheets/pythagoras_worksheet.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/worksheets/rechteck_flaeche.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/worksheets/see_grundstueck.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/worksheets/sincostan.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/worksheets/sincostan_funktion.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/worksheets/skalarmult_worksheet.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/worksheets/streckeabtragen_worksheet.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/worksheets/streckenteilung_worksheet.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/worksheets/subtraktion_worksheet.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/worksheets/thales.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/worksheets/thales_beweis.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/worksheets/trigonometrisch1.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/worksheets/trigonometrisch2.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/worksheets/trigonometrisch3.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/worksheets/trigonometrisch4.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/worksheets/umfangswinkel_worksheet.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/worksheets/unterobersumme.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/worksheets/vektor_worksheet.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/worksheets/verschiebung_worksheet.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/worksheets/verzinsung_worksheet.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ggb/worksheets/viereck.ggb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/graphen.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/graphs/graph1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/graphs/graph1neu.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/graphs/graph2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/graphs/graph3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/graphs/graphJana.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/group/basic.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/group/group.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/gxt/blubb0.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/gxt/blubb00.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/gxt/blubb1.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/gxt/blubb104.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/gxt/blubb105.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/gxt/blubb11.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/gxt/blubb18.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/gxt/blubb2.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/gxt/blubb22.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/gxt/blubb26.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/gxt/blubb27.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/gxt/blubb3.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/gxt/blubb31.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/gxt/blubb32.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/gxt/blubb34.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/gxt/blubb37.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/gxt/blubb39.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/gxt/blubb4.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/gxt/blubb40.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/gxt/blubb44.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/gxt/blubb45.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/gxt/blubb46.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/gxt/blubb47.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/gxt/blubb48.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/gxt/blubb49.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/gxt/blubb52.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/gxt/blubb54.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/gxt/blubb55.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/gxt/blubb56.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/gxt/blubb57.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/gxt/blubb58.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/gxt/blubb61.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/gxt/blubb66.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/gxt/blubb69.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/gxt/blubb70.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/gxt/blubb74.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/gxt/blubb75.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/gxt/blubb76.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/gxt/blubb77.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/gxt/blubb78.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/gxt/blubb79.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/gxt/blubb81.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/gxt/blubb82.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/gxt/blubb92.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/gxt/blubb93.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/gxt/blubb94.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/gxt/blubb95.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/gxt/blubb96.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/gxt/blubb97.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/gxt2jessiecode.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/gxt_elements.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/gxt_elements/arrowparallel.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/gxt_elements/lotstrecke.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/gxt_elements/parallele.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/gxt_elements/senkrechte.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/gxt_elements/umkreis.nc.gxt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/gxt_event2.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/highlightoption.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/hilbert.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/hsv-flower.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/hypotrochoid.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/i2geo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/i2gstring.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/image.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/image2.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/image3.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/imageTransform.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/inequalities.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/infinity.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/input.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/intergeo.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/intersection_with_dependencies_I.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/intersection_with_dependencies_II.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/jc.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/jc.xhtml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/jctag.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/kerg.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/linechart.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/lines_with_arrows.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/magnifier.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/mathML.xhtml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/mathjax.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/medsand.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/multigeonext.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/multipleBoards.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/multitouch.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/new_examples/bundestag.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/new_examples/carpsandpikes.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/new_examples/css/dark.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/new_examples/css/index.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/new_examples/css/shCore.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/new_examples/css/shThemeDark.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/new_examples/fractals.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/new_examples/img/bundestag.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/new_examples/img/carp_icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/new_examples/img/carpsandpikes.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/new_examples/img/fractals.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/new_examples/img/infinity.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/new_examples/img/kaleidoscope.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/new_examples/img/lindenmayer.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/new_examples/img/logo-darker.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/new_examples/img/logo-grayscale.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/new_examples/img/moonwalk.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/new_examples/img/pike_icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/new_examples/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/new_examples/infinity.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/new_examples/js/jsxgraph-dark.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/new_examples/js/shBrushJScript.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/new_examples/js/shBrushXml.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/new_examples/js/shCore.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/new_examples/kaleidoscope.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/new_examples/lindenmayer.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/new_examples/moonwalk.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/node/jsxgraph.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/node/readdir.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/node/rendering.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/node/sketch.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/node/test.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ode.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ode_dynamic.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/optimization.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/optimization2.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/panzoom.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/parabola.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/perched_birds.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/piechart.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/piechart2.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/pointbyclick.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/pointsHomogeneous.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/polarFormCurves.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/polygon.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/polygon2.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/programming.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/projectiveTransform.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/projectiveTransform2.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/r.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/r.test" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/randomGraphs.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/regression.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/riemann.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/riemannsum.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/rpy.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/rserv.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/sandkasten.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/segment.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/semicircle.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/server.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/shareprice.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/shear.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/sierpinski.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/sin.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/sin_1_by_x.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/sincos_and_thales.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/sinewaves.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/sketch.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/slider.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/slopefield.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/snapshot.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/snaptogrid.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/speedtest.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/stomachion.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/table_to_chart.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/tangram.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/templates/css/dark.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/templates/css/jsxexamples.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/templates/css/shCore.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/templates/css/shThemeDark.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/templates/css/shThemeDefault.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/templates/img/jsxgraph_badge_20.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/templates/img/jsxgraph_badge_39.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/templates/img/jsxgraph_logo_20.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/templates/img/logo-100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/templates/img/logo-150.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/templates/img/logo-black.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/templates/img/logo-dark.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/templates/img/logo-darker.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/templates/img/logo-grayscale.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/templates/js/dark.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/templates/js/shBrushJScript.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/templates/js/shBrushXml.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/templates/js/shCore.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/templates/jsxgraph_dark.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/templates/jsxgraph_dev.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/templates/jsxgraph_example.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/tetris.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/tetris2.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/three_inner_circles.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ticked_lines.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/ticked_lines2.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/tracecurve/egg.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/tracecurve/ladder_sliding_wall.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/tracecurve/limacon.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/tracecurve/loci_circle.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/tracecurve/loci_line.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/tracecurve/loci_midpoints.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/tracecurve/simsonsteiner.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/tracecurve/watts_curve.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/traces.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/transformations.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/transformations2.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/turtle_geonext.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/turtleglider.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/turtles.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/uccellino.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/vector.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/viewer.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/wagner.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/wahldaten.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/examples/wahldaten.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/extensions/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/extensions/centroid.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/extensions/square.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/extensions/triangle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/plugins/mediawiki/JSXGraph.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/plugins/moodle/moodle1.9/filter.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/plugins/moodle/moodle1.9/jsxgraph.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/plugins/moodle/moodle1.9/jsxgraphcore.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/plugins/moodle/moodle1.9/readme.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/plugins/moodle/moodle2/GeonextReader.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/plugins/moodle/moodle2/filter.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/plugins/moodle/moodle2/filtersettings.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/plugins/moodle/moodle2/jsxgraphcore.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/plugins/moodle/moodle2/lang/en/filter_jsxgraph.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/plugins/moodle/moodle2/readme.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/plugins/moodle/moodle2/styles.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/plugins/moodle/moodle2/version.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/plugins/wordpress/jsxgraph/JSXGraph.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/plugins/wordpress/jsxgraph/jsxgraph.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/plugins/wordpress/jsxgraph/jsxgraphcore.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/plugins/wordpress/jsxgraph/readme.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/plugins/wordpress/jsxgraph/screenshot-1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/plugins/wordpress/jsxgraph/screenshot-2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/plugins/wordpress/jsxgraph/screenshot-3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/plugins/wordpress/jsxgraph/screenshot-4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/plugins/wordpress/jsxgraph/screenshot-5.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/plugins/wordpress/jsxgraph/screenshot-6.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/plugins/wordpress/jsxgraphwp.zip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/base/board.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/base/chart.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/base/circle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/base/composition.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/base/constants.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/base/coords.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/base/coordselement.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/base/curve.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/base/element.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/base/group.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/base/image.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/base/line.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/base/point.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/base/polygon.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/base/text.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/base/ticks.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/base/transformation.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/base/turtle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/element/arc.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/element/button.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/element/checkbox.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/element/composition.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/element/conic.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/element/input.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/element/locus.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/element/measure.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/element/sector.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/element/slider.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/element/slopetriangle.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/jsxgraph.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/jsxgraphnode.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/jxg.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/loadjsxgraph.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/math/bst.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/math/complex.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/math/geometry.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/math/math.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/math/numerics.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/math/poly.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/math/qdt.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/math/statistics.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/math/symbolic.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/options.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/parser/datasource.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/parser/geonext.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/parser/jessiecode.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/parser/jessiescript.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/reader/cinderella.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/reader/file.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/reader/geogebra.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/reader/geonext.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/reader/graph.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/reader/intergeo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/reader/sketch.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/reader/tracenpoche.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/renderer/abstract.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/renderer/canvas.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/renderer/no.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/renderer/svg.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/renderer/vml.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/server/JXG.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/server/JXGServer.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/server/JXGServerModule.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/server/README" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/server/RStats.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/server/YahooFinance.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/server/fft.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/server/geoloci.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/server/jxggroebner.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/server/jxgtestplugin.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/server/server.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/themes/dark.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/themes/gui.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/utils/base64.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/utils/color.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/utils/dump.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/utils/encoding.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/utils/env.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/utils/event.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/utils/expect.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/utils/type.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/utils/uuid.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/utils/xml.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/src/utils/zip.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/test/fire.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/test/jsTestDriver.conf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/test/sinon.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/test/testAbstractRenderer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/test/testComposition.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/test/testGeneric.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/test/testGeonextParser.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/test/testGroup.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/test/testJXG.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/test/testMath.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/test/testMathNumerics.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/test/testMathPoly.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/test/testRGBColor.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/test/testSlider.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jsxgraph/test/testUuid.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower.json" afterPath="$PROJECT_DIR$/bower.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/c/newtonpoly/newtonpoly/main.c" afterPath="$PROJECT_DIR$/c/newtonpoly/newtonpoly/main.c" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/main.js" afterPath="$PROJECT_DIR$/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/newtonform.js" afterPath="$PROJECT_DIR$/js/newtonform.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/c/newtonpoly/newtonpoly.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/c/newtonpoly/newtonpoly.xcodeproj/project.pbxproj" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="iseng.iws" />
@@ -35,33 +1051,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="JSXGraph.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bower_components/jsxgraph/plugins/wordpress/jsxgraph/JSXGraph.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="41.565216" vertical-offset="956" max-vertical-offset="1680">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="numerics.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bower_components/jsxgraph/src/math/numerics.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="25.185184" vertical-offset="26750" max-vertical-offset="32040">
-              <caret line="1738" column="28" selection-start-line="1738" selection-start-column="28" selection-end-line="1738" selection-end-column="28" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="newtonform.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="newtonform.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/newtonform.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.16253869" vertical-offset="1155" max-vertical-offset="2325">
-              <caret line="84" column="16" selection-start-line="84" selection-start-column="7" selection-end-line="84" selection-end-column="16" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="1051" max-vertical-offset="2325">
+              <caret line="99" column="27" selection-start-line="99" selection-start-column="27" selection-end-line="99" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -80,8 +1074,8 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
-              <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
+              <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -89,41 +1083,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.869565" vertical-offset="0" max-vertical-offset="270">
-              <caret line="9" column="32" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bezier.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bower_components/jsxgraph/examples/bezier.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="716" max-vertical-offset="1155">
-              <caret line="29" column="15" selection-start-line="29" selection-start-column="15" selection-end-line="29" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jsxgraphcore.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bower_components/jsxgraph/distrib/jsxgraphcore.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="273" max-vertical-offset="735">
-              <caret line="60" column="23204" selection-start-line="60" selection-start-column="23204" selection-end-line="60" selection-end-column="23204" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="geometry.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/bower_components/jsxgraph/src/math/geometry.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="18236" max-vertical-offset="36825">
-              <caret line="1267" column="41" selection-start-line="1267" selection-start-column="41" selection-end-line="1267" selection-end-column="41" />
+            <state vertical-scroll-proportion="0.15486726" vertical-offset="0" max-vertical-offset="678">
+              <caret line="7" column="84" selection-start-line="7" selection-start-column="84" selection-end-line="7" selection-end-column="84" />
               <folding />
             </state>
           </provider>
@@ -139,7 +1103,10 @@
       </map>
     </option>
     <option name="PUSH_TAGS">
-      <GitPushTagMode />
+      <GitPushTagMode>
+        <option name="argument" value="--follow-tags" />
+        <option name="title" value="Current Branch" />
+      </GitPushTagMode>
     </option>
   </component>
   <component name="IdeDocumentHistory">
@@ -149,9 +1116,9 @@
         <option value="$PROJECT_DIR$/bower_components/jsxgraph/examples/bezier.html" />
         <option value="$PROJECT_DIR$/js/lagrange.js" />
         <option value="$PROJECT_DIR$/js/newtonpoly.js" />
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/js/main.js" />
         <option value="$PROJECT_DIR$/js/newtonform.js" />
+        <option value="$PROJECT_DIR$/js/main.js" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -190,7 +1157,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -237,74 +1203,9 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="iseng" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="iseng" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bower_components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jsxgraph" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="iseng" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="iseng" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bower_components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jsxgraph" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="iseng" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="iseng" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bower_components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jsxgraph" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="math" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -316,44 +1217,42 @@
     <property name="FullScreen" value="true" />
     <property name="PluginDummyText.Genre" value="latin" />
     <property name="SearchEverywhereHistoryKey" value="newton&#9;null&#9;null" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
-      <TestRunner />
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
       <method />
     </configuration>
-    <configuration default="true" type="BashConfigurationType" factoryName="Bash">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="INTERPRETER_PATH" value="/bin/bash" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <module name="" />
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
+      <setting name="configLocationType" value="CONFIG_FILE" />
+      <setting name="settingsFile" value="" />
+      <setting name="serverType" value="INTERNAL" />
+      <setting name="preferredDebugBrowser" value="Chrome" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
       <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
       <method />
     </configuration>
     <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
       <method />
     </configuration>
-    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
-      <BehatRunner />
-      <method />
-    </configuration>
     <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
       <method />
     </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-options />
       <gulpfile />
       <tasks />
-      <arguments />
       <pass-parent-envs>true</pass-parent-envs>
       <envs />
       <method />
@@ -383,34 +1282,40 @@
       <option name="project" value="LOCAL" />
       <updated>1426417458517</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Using newton divided differences for the polynomial interpolation">
+      <created>1426451905327</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1426451905327</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24555735" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25767368" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
@@ -433,9 +1338,9 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24151857" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -462,21 +1367,105 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/bower_components/jsxgraph/plugins/wordpress/jsxgraph/JSXGraph.php">
+    <entry file="file://$PROJECT_DIR$/js/newtonform.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1680">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2325">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bower_components/jsxgraph/src/math/numerics.js">
+    <entry file="file://$PROJECT_DIR$/js/lagrange.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="32040">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="1260">
+          <caret line="34" column="17" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="345">
+          <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="270">
+          <caret line="9" column="32" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/newtonform.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2325">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/lagrange.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="1260">
+          <caret line="34" column="17" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="345">
+          <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="270">
+          <caret line="9" column="32" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/newtonform.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2325">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/lagrange.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="1260">
+          <caret line="34" column="17" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="345">
+          <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="270">
+          <caret line="9" column="32" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="32" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -514,107 +1503,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bower_components/jsxgraph/examples/bezier.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="716" max-vertical-offset="1155">
-          <caret line="29" column="15" selection-start-line="29" selection-start-column="15" selection-end-line="29" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bower_components/jsxgraph/distrib/jsxgraphcore.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="273" max-vertical-offset="735">
-          <caret line="60" column="23204" selection-start-line="60" selection-start-column="23204" selection-end-line="60" selection-end-column="23204" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bower_components/jsxgraph/src/base/board.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="56880" max-vertical-offset="65790">
-          <caret line="4203" column="38" selection-start-line="4203" selection-start-column="33" selection-end-line="4203" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bower_components/jsxgraph/examples/graphs/graph1.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="702">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bower_components/jsxgraph/src/reader/graph.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="960" max-vertical-offset="3585">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bower_components/jsxgraph/src/base/board.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="56880" max-vertical-offset="65790">
-          <caret line="4203" column="38" selection-start-line="4203" selection-start-column="33" selection-end-line="4203" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bower_components/jsxgraph/plugins/wordpress/jsxgraph/JSXGraph.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="41.565216" vertical-offset="956" max-vertical-offset="1680">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bower_components/jsxgraph/examples/bezier.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="716" max-vertical-offset="1155">
-          <caret line="29" column="15" selection-start-line="29" selection-start-column="15" selection-end-line="29" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bower_components/jsxgraph/distrib/jsxgraphcore.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="273" max-vertical-offset="735">
-          <caret line="60" column="23204" selection-start-line="60" selection-start-column="23204" selection-end-line="60" selection-end-column="23204" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bower_components/jsxgraph/src/math/geometry.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="18236" max-vertical-offset="36825">
-          <caret line="1267" column="41" selection-start-line="1267" selection-start-column="41" selection-end-line="1267" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bower_components/jsxgraph/src/math/numerics.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="25.185184" vertical-offset="26750" max-vertical-offset="32040">
-          <caret line="1738" column="28" selection-start-line="1738" selection-start-column="28" selection-end-line="1738" selection-end-column="28" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/newtonpoly.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.40640393" vertical-offset="255" max-vertical-offset="960">
           <caret line="28" column="24" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.869565" vertical-offset="0" max-vertical-offset="270">
-          <caret line="9" column="32" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -626,20 +1518,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/newtonform.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1621" max-vertical-offset="2325">
+          <caret line="99" column="27" selection-start-line="99" selection-start-column="27" selection-end-line="99" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="345">
-          <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="375">
+          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/newtonform.js">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16253869" vertical-offset="1155" max-vertical-offset="2325">
-          <caret line="84" column="16" selection-start-line="84" selection-start-column="7" selection-end-line="84" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.15486726" vertical-offset="0" max-vertical-offset="678">
+          <caret line="7" column="84" selection-start-line="7" selection-start-column="84" selection-end-line="7" selection-end-column="84" />
           <folding />
         </state>
       </provider>
