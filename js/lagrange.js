@@ -53,6 +53,7 @@ Lagrange.prototype._updateWeights = function() {
 		}
 		this.ws[j] = 1/w;
 	}
+    console.log("w => " + w);
 }
 
 /**
@@ -72,6 +73,7 @@ Lagrange.prototype.valueOf = function(x) {
 			return this.ys[j];
 		}
 	}
-	
+	//console.log("a=" + a + ", b="+b + ", c=" +c);
+    console.log("(" + x + "," + b/c + ")");
 	return b / c;
 }
