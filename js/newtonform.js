@@ -12,9 +12,10 @@
         console.error("(Newtonform.js) Error in line 12: must have an equal number of x and y points in the parameter");
     }
     this.n = xs.length-1;
-    console.log("degree: " + n);
     this.xs = xs;
     this.ys = ys;
+    console.log("xs => " + xs);
+    console.log("ys => " + ys);
     this.c = ys;
     this._updateTable();
 }
@@ -47,18 +48,19 @@ Newton.prototype.changePoint = function(index, x, y) {
  *
  */
 Newton.prototype._updateTable = function(){
-    for(j=1;j<n;j++){
-        for (i=0;i<n-j;i++){
-            if (xs[i+j] == xs[i]){
+    for(j=1;j<this.n;j++){
+        for (i=0;i<this.n-j;i++){
+            if (this.xs[i+j] == this.xs[i]){
                 console.error("(Newtonform.js) Error in line ${linenumber}: duplicate x values encountered !\n\n");
                 return;
             }
-            this.c[i] = (ys[i+1]-ys[i])/(x[i+j]-x[i]);
+            this.c[i] = (ys[i+1]-ys[i])/(xs[i+j]-xs[i]);
+
         }
     }
-    console.log("Newton form coefficients : " + c);
-    this.c = this.combineCoefficients(c);
-    console.log("Combined coefficients : " + c);
+    console.log("Newton form coefficients : " + this.c);
+    this.c = this.combineCoefficients(this.ys);
+    //console.log("Combined coefficients : " + this.combineCoefficients(this.c));
 }
 
 /**
@@ -68,9 +70,15 @@ Newton.prototype._updateTable = function(){
  * @see Jeff Stetekluh's method for combining the terms to form the coefficients of the polynomial.
  */
 Newton.prototype.combineCoefficients = function(c){
-    for(j=0; j<n; j++) {
-        for(i=1; i<=n-j; i++) {
-            c[i]=c[i]-xs[i+j]*c[i-1];
+    console.log("c => "+ c);
+    //for(j=0; j<this.n; j++) {
+    //    for(i=1; i<=this.n-j; i++) {
+    //        c[i]=c[i]-xs[i+j]*c[i-1];
+    //    }
+    //}
+    for(j=0; j<this.n; j++) {
+        for(i=1; i<=this.n-j; i++) {
+            c[i]=this.ys[i]-xs[i+j]*this.ys[i-1];
         }
     }
     return c;
@@ -84,8 +92,17 @@ Newton.prototype.combineCoefficients = function(c){
  */
 Newton.prototype.calculateY = function(x){
     fx = this.c[0];
-    for(i=1; i<=n; i++) {
-        fx=fx*x+this.c[i];
+    for(i=1; i<=this.n; i++) {
+        fx=fx*(x-xs[i])+this.c[i];
     }
+
+    //fx = this.c[0];
+    //for(i=1; i<=this.n; i++) {
+    //    fx=fx*x+this.c[i];
+    //}
     return fx;
+}
+
+Newton.prototype.getCoefficients = function(){
+    return this.c;
 }

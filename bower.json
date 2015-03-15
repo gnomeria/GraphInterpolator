@@ -15,6 +15,9 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "jsxgraph": "~0.99.3"
+    "jsxgraph": "~0.99.3",
+    "d3": "~3.5.5",
+    "chartjs": "~1.0.2",
+    "numericjs": "~1.2.6"
   }
 }
